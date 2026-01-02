@@ -2,8 +2,6 @@
 
 | **OS Name & Year**       | **Purpose of Creation**                                      | **Key Features**                                                 | **Typical Usage (Safe & Accurate)**                                   |
 
-| ------------------------ | ------------------------------------------------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------- |
-
 | **QNX (1982)**           | Provide a reliable, real-time OS for safety-critical systems | Microkernel, hard real-time, strong fault isolation, POSIX       | Automotive systems, industrial control, certified embedded systems    |
 
 | **pSOS (1988)**          | Early commercial RTOS for embedded real-time control         | Priority-based scheduling, deterministic kernel, small footprint | Legacy embedded systems (industrial, aerospace – older platforms)     |
