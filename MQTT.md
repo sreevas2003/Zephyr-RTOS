@@ -178,4 +178,14 @@ terminal 2
 mosquitto_pub -h localhost -t topic/test -m "Hello MQTT"
 ```
 
+| Flag       | Purpose        |
+| ---------- | -------------- |
+| `-h`       | Broker address |
+| `-p`       | Port           |
+| `-t`       | Topic          |
+| `-m`       | Message        |
+| `-q`       | QoS            |
+| `-r`       | Retain         |
+| `-u`, `-P` | Authentication |
+| `-d`       | Debug          |
 
