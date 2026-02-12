@@ -57,8 +57,18 @@ Can be:
 
 **🔹 L2CAP (Logical Link Control and Adaptation Protocol)**
 
-- Multiplexing multiple protocols
-- Segmentation and reassembly of packets
+- Allows multiple protocols to share one BLE connection.
+- Segmentation and reassembly of packets : BLE packets have size limits. If upper layer sends large data: 1. L2CAP splits it and 2. Receiver reassembles it
+
+**SMP (Security Manager Protocol)**
+
+SMP (Security Manager Protocol) is the part of the BLE stack responsible for:
+- Pairing
+- Bonding
+- Key distribution
+- Encryption setup
+
+It ensures secure communication between BLE devices.
 
 **🔹 ATT (Attribute Protocol)**
 
