@@ -100,12 +100,17 @@ MQTT provides three levels of message delivery reliability:
 - Highest reliability
 - More overhead
 
+```
+mosquitto_pub -t test/topic -m "QoS1 message" -q 1
+```
 ---
 
 ### 5.4 Retained Messages
 - Broker stores last retained message for a topic
 - New subscribers immediately receive that message
-
+```
+mosquitto_pub -t test/topic -m "Stored value" -r
+```
 ---
 
 ### 5.5 Last Will and Testament (LWT)
@@ -156,3 +161,21 @@ Default Ports:
 - Sensor networks
 
 ---
+
+```
+sudo apt update
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+sudo systemctl status mosquitto
+```
+terminal 1
+```
+mosquitto_sub -h localhost -t topic/test
+```
+terminal 2
+```
+mosquitto_pub -h localhost -t topic/test -m "Hello MQTT"
+```
+
+
