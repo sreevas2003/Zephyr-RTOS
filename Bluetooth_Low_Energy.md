@@ -1,3 +1,25 @@
+# Bluetooth Classic vs BLE
+
+| Feature               | Bluetooth Classic (BR/EDR)       | Bluetooth Low Energy (BLE)               |
+| --------------------- | -------------------------------- | ---------------------------------------- |
+| Main Purpose          | Continuous high data streaming   | Low power, small data transfer           |
+| Power Consumption     | High                             | Very Low                                 |
+| Battery Life          | Hours–Days                       | Months–Years                             |
+| Data Rate             | Up to ~3 Mbps                    | 125 kbps – 2 Mbps                        |
+| Throughput            | High                             | Moderate                                 |
+| Latency               | Moderate                         | Low                                      |
+| Connection Setup Time | Slower (~100 ms)                 | Very Fast (few ms)                       |
+| Communication Model   | Point-to-point streaming         | Client–Server model                      |
+| Protocol Stack        | LMP, L2CAP, RFCOMM, SDP, A2DP    | PHY, LL, L2CAP, ATT, GATT, GAP, SMP      |
+| Channel Count         | 79 channels                      | 40 channels                              |
+| Advertising Support   | Limited                          | Strong (3 advertising channels)          |
+| Security              | AES-128                          | AES-128 + LE Secure Connections (ECDH)   |
+| Typical Devices       | Headphones, Speakers, Car Audio  | IoT Sensors, Fitness Bands, Beacons      |
+| Topology              | Piconet, Scatternet              | Central–Peripheral, Broadcaster–Observer |
+
+
+
+
 # BLE Applications Overview
 A typical BLE application consists of two devices: a peripheral and a central. Before establishing a connection, a peripheral broadcasts its presence via a process called BLE advertising. The central scans for available peripherals. Once the central finds the desired peripheral, a connection is established between the two.
 
