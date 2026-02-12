@@ -1,9 +1,11 @@
 # BLE Applications Overview
 A typical BLE application consists of two devices: a peripheral and a central. Before establishing a connection, a peripheral broadcasts its presence via a process called BLE advertising. The central scans for available peripherals. Once the central finds the desired peripheral, a connection is established between the two.
+
 <img width="505" height="277" alt="image" src="https://github.com/user-attachments/assets/8050d292-40b8-4e26-a521-213e2088c2d6" />
 
 # BLE Stack Architecture
 The BLE stack architecture is typically divided into three main layers: the application layer, the host layer, and the controller layer.
+
 <img width="628" height="431" alt="image" src="https://github.com/user-attachments/assets/c3b12f20-f08d-4108-9c93-e69cd2f92d5c" />
 
 ### Application
